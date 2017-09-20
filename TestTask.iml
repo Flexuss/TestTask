@@ -9,7 +9,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -36,11 +36,11 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.11" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.3.4.Final" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
@@ -61,17 +61,17 @@
     <orderEntry type="library" name="Maven: javax.transaction:javax.transaction-api:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:1.11.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.13.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.24" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.24" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aspects:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aspects:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.3" level="project" />
     <orderEntry type="library" name="Maven: postgresql:postgresql:9.1-901.jdbc4" level="project" />
   </component>
 </module>
