@@ -24,6 +24,7 @@ public class RestApiController {
     @RequestMapping(value = "/authorization", method = RequestMethod.POST)
     public Response authorization(@RequestParam(value = "username") String username,
                                   @RequestParam(value = "password") String password){
+        username=username.toLowerCase();
         if(!checkParam(username)){
             return new Response("Wrong username");
         }
@@ -40,6 +41,7 @@ public class RestApiController {
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public Response registration(@RequestParam(value = "username") String username,
                                  @RequestParam(value = "password") String password){
+        username=username.toLowerCase();
         if(!checkParam(username)){
             return new Response("Wrong username");
         }
