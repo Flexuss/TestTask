@@ -53,7 +53,7 @@ public class RestApiController {
         }else return new Response("User already exist");
     }
 
-    public static boolean checkParam(String param){
+    private static boolean checkParam(String param){
         Pattern p = Pattern.compile("^[a-zA-Z0-9]+$");
         Matcher m = p.matcher(param);
         return m.matches();
