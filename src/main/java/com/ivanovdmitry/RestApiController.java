@@ -25,7 +25,7 @@ public class RestApiController {
     public Response authorization(@RequestParam(value = "username") String username,
                                   @RequestParam(value = "password") String password){
         username=username.toLowerCase();
-        if(!checkParam(username)){
+        if(!checkUsername(username)){
             return new Response("Wrong username");
         }
         User user=userService.findByUsername(username);
@@ -42,12 +42,12 @@ public class RestApiController {
     public Response registration(@RequestParam(value = "username") String username,
                                  @RequestParam(value = "password") String password){
         username=username.toLowerCase();
-        if(!checkParam(username)){
+        if(!checkUsername(username)){
             return new Response("Wrong username");
         }
         User user=userService.findByUsername(username);
         if(user==null){
-            if(!checkParam(password)){
+            if(!checkPassword(password)){
                 return new Response("Wrong password");
             }
             userService.save(new User(username, password));
@@ -55,9 +55,15 @@ public class RestApiController {
         }else return new Response("User already exist");
     }
 
-    private static boolean checkParam(String param){
+    private boolean checkPassword(String password) {
+        Pattern p = Pattern.compile("^//S+$");
+        Matcher m = p.matcher(password);
+        return m.matches();
+    }
+
+    private static boolean checkUsername(String username){
         Pattern p = Pattern.compile("^[a-zA-Z0-9_-]+$");
-        Matcher m = p.matcher(param);
+        Matcher m = p.matcher(username);
         return m.matches();
     }
 }
