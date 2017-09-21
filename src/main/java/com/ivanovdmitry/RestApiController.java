@@ -48,7 +48,7 @@ public class RestApiController {
         User user=userService.findByUsername(username);
         if(user==null){
             if(!checkParam(password)){
-                return new Response("Password is empty");
+                return new Response("Wrong password");
             }
             userService.save(new User(username, password));
             return new Response("Success");
