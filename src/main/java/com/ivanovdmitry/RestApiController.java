@@ -25,7 +25,7 @@ public class RestApiController {
     public Response authorization(@RequestParam(value = "username") String username,
                                   @RequestParam(value = "password") String password){
         if(!checkParam(username)){
-            return new Response("Username is empty");
+            return new Response("Wrong username");
         }
         User user=userService.findByUsername(username);
         if(user==null){
@@ -41,7 +41,7 @@ public class RestApiController {
     public Response registration(@RequestParam(value = "username") String username,
                                  @RequestParam(value = "password") String password){
         if(!checkParam(username)){
-            return new Response("Username is empty");
+            return new Response("Wrong username");
         }
         User user=userService.findByUsername(username);
         if(user==null){
@@ -54,7 +54,7 @@ public class RestApiController {
     }
 
     private static boolean checkParam(String param){
-        Pattern p = Pattern.compile("^[a-zA-Z0-9]+$");
+        Pattern p = Pattern.compile("^[a-zA-Z0-9_-]+$");
         Matcher m = p.matcher(param);
         return m.matches();
     }
