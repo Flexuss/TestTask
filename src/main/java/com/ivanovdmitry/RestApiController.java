@@ -56,7 +56,7 @@ public class RestApiController {
     }
 
     private boolean checkPassword(String password) {
-        Pattern p = Pattern.compile("^//S+$");
+        Pattern p = Pattern.compile("^[a-zA-Z0-9_-]+$");
         Matcher m = p.matcher(password);
         return m.matches();
     }
